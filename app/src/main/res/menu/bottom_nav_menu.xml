@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_income1"
+        android:icon="@drawable/ic_income1"
+        android:title="Income" />
+
+    <item
+        android:id="@+id/nav_expenses1"
+        android:icon="@drawable/ic_expense"
+        android:title="Expenses" />
+
+    <!-- Home at the Center -->
+    <item
+        android:id="@+id/nav_home1"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_goal1"
+        android:icon="@drawable/ic_goal"
+        android:title="Goal" />
+
+    <item
+        android:id="@+id/nav_profile1"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+</menu>

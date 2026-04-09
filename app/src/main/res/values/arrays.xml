@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gold_purity_array">gold_purity_array</string-array>
+    <string-array name="cities_array">cities_array</string-array>
+    <string-array name="operators_array">operators_array</string-array>
+    <string-array name="circles_array">circles_array</string-array>
+</resources>

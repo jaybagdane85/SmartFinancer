@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- ✅ Required Permissions -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SMARTFINANCER"
+        tools:targetApi="31">
+        <activity
+            android:name=".YearlyTransactionActivity"
+            android:exported="false" />
+
+        <activity android:name=".PortraitCaptureActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".YearlyLimitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SalaryBreakdownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MonthlyTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MonthlyLimitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyLimitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnnualExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyExpensesActivity"
+            android:exported="false"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".SetLimitActivity"
+            android:exported="false" /> <!-- ✅ SMS Receiver -->
+        <receiver
+            android:name=".SMSReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver> <!-- ✅ Activities -->
+
+        <activity
+            android:name=".ProfileFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".RechargesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MobilePaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthInsuranceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermLifeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoldLoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalLoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LargeCapFundsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoldInvestmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MutualFundsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BestSIPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubscriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MoneyTakenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MoneyGivenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayToMobileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RechargeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomePagerAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".WelcomeFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" /> <!-- ✅ Login & Signup -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" /> <!-- ✅ Launcher (Main Entry) -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- ✅ Dashboard & Goals -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoalSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpendingAlertsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InvestmentTipsActivity"
+            android:exported="false" />
+
+        <receiver android:name=".GoalReminderReceiver" android:exported="true" />
+        <receiver android:name=".DailyGoalSummaryReceiver" android:exported="true" />
+        <receiver android:name=".BootReceiver" android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- SMS Receiver for dynamic transaction notifications -->
+        <receiver android:name=".SMSReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+
+
+</manifest>

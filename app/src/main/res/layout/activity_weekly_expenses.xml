@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_weekly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/weekly_expense_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Weekly Limit: ₹0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/weekly_limit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new weekly limit"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/set_weekly_limit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Weekly Limit" />
+</LinearLayout>

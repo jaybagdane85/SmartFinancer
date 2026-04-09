@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification Settings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="16dp"/>
+
+    <Switch
+        android:id="@+id/switchGoalReminders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goal Reminders"
+        android:textSize="16sp"
+        android:checked="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive reminders about your financial goals"
+        android:textSize="14sp"
+        android:textColor="@color/colorGray"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Switch
+        android:id="@+id/switchDailySummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Summary"
+        android:textSize="16sp"
+        android:checked="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive daily summary of your financial goals"
+        android:textSize="14sp"
+        android:textColor="@color/colorGray"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Switch
+        android:id="@+id/switchExpenseAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense Alerts"
+        android:textSize="16sp"
+        android:checked="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get notified when you exceed your spending limits"
+        android:textSize="14sp"
+        android:textColor="@color/colorGray"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Switch
+        android:id="@+id/switchSavingsTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Savings Tips"
+        android:textSize="16sp"
+        android:checked="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive tips on how to save more money"
+        android:textSize="14sp"
+        android:textColor="@color/colorGray"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>

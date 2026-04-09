@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "707536777094",
+    "project_id": "smartfinancer-dea90",
+    "storage_bucket": "smartfinancer-dea90.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707536777094:android:f7c04b7912298276758607",
+        "android_client_info": {
+          "package_name": "com.example.smartfinancer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSjrTfc8Y8kuRzh98f8kC4WR61DJzpRlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
